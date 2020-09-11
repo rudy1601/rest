@@ -20,4 +20,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'posts'], function () {
     Route::get('/', 'PostController@list')->name('list');
+    Route::post('/', 'PostController@store')->name('store');
 });
